@@ -1,0 +1,144 @@
+/* CSS Reset and Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #faf8f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #8b4513;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    max-width: 90%;
+    width: 100%;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling - Mobile First */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.newsletter-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #654321;
+}
+
+/* Description */
+.description {
+    color: #666666;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #666666;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #8b4513;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.social-links a:hover {
+    color: #654321;
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer address p {
+    margin: 0.25rem 0;
+}
+
+/* Media Query for Desktop - 480px breakpoint */
+@media (min-width: 480px) {
+    main {
+        max-width: 500px;
+    }
+    
+    .newsletter-form {
+        flex-direction: row;
+        max-width: 400px;
+    }
+    
+    .newsletter-form input[type="email"] {
+        flex: 1;
+    }
+    
+    .newsletter-form button {
+        flex-shrink: 0;
+    }
+    
+    .social-links a {
+        display: inline;
+        margin: 0 1rem;
+    }
+}
